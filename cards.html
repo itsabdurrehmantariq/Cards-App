@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards App</title>
+    <style>
+        .mobile {
+            width: 300px;
+            height: 500px;
+            /* background-color: rgb(148, 144, 139); */
+            padding-left: 30px;
+
+        }
+
+        #top {
+            background-color: #050315;
+            padding: 10px;
+            border-radius: 20px;
+
+        }
+
+        #card {
+            color: white;
+            padding: 10px 10px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #1fc949, #99d115, #e20fd1);
+        }
+
+        .summary .transaction {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+
+        .summary .transaction div {
+            display: flex;
+        }
+
+        .summary .transaction div div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #card span img {
+            width: 50px;
+            position: relative;
+            left: 160px;
+        }
+
+        .addcard {
+            /* margin-top: 80px; */
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            height: 570px;
+            width: 300px;
+            background-color: #dddde4;
+            border-radius: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        .addcard input {
+            background-color: #05031500;
+            border: #5a5757 1px solid;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        .addcard button {
+            position: relative;
+            top: 220px;
+            height: 30px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #9167a5, #b700ff);
+            color: white;
+            height: 40px;
+        }
+
+        .hero {
+            display: flex;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="mobile">
+            <div id="top">
+                <p style="color: silver;">Welcome <span style="color: white; font-weight: 200;">Abdur Rehman</span></p>
+                <h3 style="color: white;">My Cards</h3>
+                <div id="card">
+                    <p>Balance</p>
+                    <h3>$ 4,387</h3>
+                    <h4>**** **** **** 2390</h4>
+                    <span> Expires <br>04/26 <img src="visa.png" alt="visa image">
+                    </span>
+                </div>
+            </div>
+            <div id="statement">
+                <p style="font-weight: 700; padding-left: 10px;">Transactions</p>
+                <div class="summary">
+                    <div class="transaction">
+                        <div>
+                            <span>✈️</span>
+                            <div>
+                                <div>Travel</div><sub>3days ago</sub>
+                            </div>
+                        </div>
+                        <span style="background-color: pink; color: red; height: 20px;">-$200,00</span>
+                    </div>
+                    <div class="transaction">
+                        <div>
+
+                            <span>🛍️</span>
+                            <div>
+                                <div>Shopping</div><sub>3days ago</sub>
+                            </div>
+                        </div>
+                        <span style="background-color: pink; color: red; height: 20px;">-$200,00</span>
+                    </div>
+                    <div class="transaction">
+                        <div>
+
+                            <span>🍕</span>
+                            <div>
+                                <div>Food</div><sub>3days ago</sub>
+                            </div>
+                        </div>
+                        <span style="background-color: pink; color: red; height: 20px;">-$200,00</span>
+                    </div>
+                    <div class="transaction">
+                        <div>
+
+                            <span>💼</span>
+                            <div>
+                                <div>Work</div><sub>3days ago</sub>
+                            </div>
+                        </div>
+                        <span style="color: green; background-color: #74fd96; height: 20px;">+$800,00 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="addcard">
+            <h3>🔙</h3>
+            <h2>Add a card</h2>
+            <form action="#">
+                <input type="text" placeholder="Enter Name" style="width: 270px;height: 30px;"><br>
+                <input type="text" placeholder="Enter Card" style="width: 270px; height: 30px;"><br>
+                <span><input type="date" style="width: 100px;height: 30px;"> <input type="text" placeholder="CVV Code"
+                        style="width: 70px;height: 30px;margin-left: 30px;"></span> <br>
+                <input type="checkbox" name="checkbox">Set As Default Card
+            </form>
+            <button>Add New Card</button>
+        </div>
+    </div>
+</body>
+
+</html>
